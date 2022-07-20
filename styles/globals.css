@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --top-nav-height: 58px;
+}
+
+@layer utilities {
+  .main-height {
+    height: calc(100vh - var(--top-nav-height));
+  }
+}
+
+@layer utilities {
+  .toc-top {
+    top: calc(2.5rem + var(--top-nav-height));
+ 
+  }
+}
+
+@layer utilities {
+   a {
+    text-decoration: underline;
+  }
+}
+
+@layer utilities {
+  nav a:hover {
+    text-decoration: underline
+  
+ }
+}
+
+@layer utilities {
+  nav a {
+    text-decoration: none
+  
+ }
+}
+
+@layer utilities {
+  h1 {
+    font-size: x-large
+  }
+}
+
